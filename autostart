@@ -195,7 +195,7 @@ hc detect_monitors
 
 # Run polybar on all monitors
 for m in $(polybar -m | cut -f1 -d:); do
-	MONITOR="$m" polybar --reload example &
+	MONITOR="$m" polybar --config=${HOME}/.config/polybar/config.ini --reload example &
 done
 
 source ~/.fehbg
