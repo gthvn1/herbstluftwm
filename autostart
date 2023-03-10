@@ -18,7 +18,7 @@ hc keyunbind --all
 Mod=Mod1    # Use alt as the main modifier
 #Mod=Mod4   # Use the super key as the main modifier
 
-TERMINAL="/home/gthouvenin/.nix-profile/bin/terminator"
+TERMINAL="terminator"
 
 hc keybind $Mod-Shift-q quit
 hc keybind $Mod-Shift-r reload
@@ -176,7 +176,7 @@ hc detect_monitors
 # Run polybar on all monitors
 for m in $(polybar -m | cut -f1 -d:); do
 	#MONITOR="$m" polybar --config=${HOME}/.config/polybar/config.ini --reload example &
-	MONITOR="$m" bash ~/.config/polybar/launch.sh --blocks
+	MONITOR="$m" bash ~/.config/polybar/launch.sh --forest
 done
 
 source ~/.fehbg
