@@ -188,8 +188,7 @@ hc unlock
 # hc detect_monitors
 
 #herbstclient set_monitors 1920x1080+0+0 1366x768+1920+312
-#xrandr --output eDP-1 --primary --mode 1366x768 --pos 1920x312 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-2 --off
-xrandr --output VGA-0 --off --output DVI-0 --mode 1920x1200 --pos 1920x0 --rotate left --output HDMI-0 --primary --mode 1920x1200 --pos 0x512 --rotate normal
+xrandr --output eDP-1 --primary --mode 1366x768 --pos 1920x312 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-2 --off
 
 hc detect_monitors
 
