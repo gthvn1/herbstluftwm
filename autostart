@@ -195,3 +195,5 @@ for m in $(polybar -m | cut -f1 -d:); do
 	#MONITOR="$m" polybar --config=${HOME}/.config/polybar/config.ini --reload example &
 	MONITOR="$m" bash ~/.config/polybar/launch.sh --cuts &
 done
+
+source ~/.fehbg
